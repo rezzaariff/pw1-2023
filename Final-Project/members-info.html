@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DivingClub | Login Members</title>
+<style>
+  .membership,
+  .login {
+    text-align: center;
+  }
+
+  .col-md-3 {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the margin as needed */
+    vertical-align: top;
+  }
+</style>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/prettyPhoto.css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body>
+<div class="main-indents">
+  <div class="main">
+    <!-- Header -->
+    <header>
+      <h1 class="logo"><a href="index.html">DivingClub</a></h1>
+      <nav>
+        <ul class="sf-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="members-info.html">Detail</a></li>
+          <li> <a href="gallery.html">Gallery</a>
+            <ul>
+              <li><a href="https://travelingyuk.com/wisata-pulau-wangi-wangi/137109/">Pulau Wangi-Wangi</a></li>
+              <li><a href="https://catperku.com/pulau-kaledupa/">Pulau Kaledupa</a></li>
+              <li><a href="https://www.nativeindonesia.com/pulau-tomia/">Pulau Tomia</a></li>
+              <li><a href="https://catperku.com/pulau-binongko/">Pulau Binongko</a></li>
+              <li> <a href="#">Destinasi Lainnya</a>
+                <ul>
+                  <li><a href="https://sulsel.idntimes.com/food/dining-guide/dina-stevanye/9-makanan-khas-wakatobi-yang-terkenal-lezat-kasuami-hingga-kambalu">Wisata Kuliner</a></li>
+                  <li><a href="https://online.fliphtml5.com/fiajx/sjvp/#p=1">DivingClub</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="calendar.html">Kalender</a></li>
+          <li class="current"><a href="members-info.html">Login Members</a></li>
+          <li><a href="contacts.html">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </header>
+    <!-- Slider -->
+    <div class="mp-slider">
+      <ul class="items">
+        <li><img src="images/slide-1.jpg" alt="">
+          <div class="banner"><span class="row-1"><b> Menjelajahi</b>Surga Tersembunyi</span><span class="row-2">Pulau Karang<b>Indonesia</b></span></div>
+        </li>
+        <li><img src="images/slide-2.jpg" alt="">
+          <div class="banner"><span class="row-1"><b>Semua</b> Keindahan </span><span class="row-2">Di Laut<b>Dalam</b></span></div>
+        </li>
+        <li><img src="images/slide-3.jpg" alt="">
+          <div class="banner"><span class="row-1"><b>Temukan</b>Harta Karun</span><span class="row-2">Di Dalam<b>Laut</b></span></div>
+        </li>
+      </ul>
+      <a href="#" class="mp-prev"></a> <a href="#" class="mp-next"></a> </div>
+    <!-- Content -->
+  <section id="content">
+    <div class="container_12">
+      <article class="a2">
+        <div class="wrapper">
+          <div class="membership">
+            <br>
+            <h2>Member kami</h2>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3">
+                  <img alt="Bootstrap Image Preview" src="images/Reza.jpeg" height="150px" width="150px"/>
+                  <h4>Reza Arif Dewanto</h4>
+                  <p>
+                    <a class="btn" href="https://www.instagram.com/rezzaarieff?igsh=MWswbWdwdnhoNXhleQ==">View details »</a>
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <img alt="Bootstrap Image Preview" src="images/Dayat.jpeg" height="150px" width="150px"/>
+                  <h4>Hidayat Abdullah Tanjung</h4>
+                  <p>
+                    <a class="btn" href="https://www.instagram.com/dayattjg?igsh=Zzc2enM3dHl1ZXl0">View details »</a>
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <img alt="Bootstrap Image Preview" src="images/Rama.jpeg" height="150px" width="150px"/>
+                  <h4>Muhammad Ramadan</h4>
+                  <p>
+                    <a class="btn" href="https://www.instagram.com/_mhmdramaaaa?igsh=MXZ2dDJiNGY1bXpxNQ==">View details »</a>
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <img alt="Bootstrap Image Preview" src="images/Delisa.jpeg" height="150px" width="150px" />
+                  <h4>Deli Sartika</h4>
+                  <p>
+                    <a class="btn" href="https://www.instagram.com/delisaaa_s?igsh=cWlrMG40c3RnczZ2">View details »</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="login">
+            <div class="container">
+              <h1>Login</h1>
+              <form id="form" onsubmit="return login(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+              </form>
+              <p style="margin-top: 20px; text-align: center; color: #000000;">Belum punya akun? <a href="daftar.html" style="color: #2979ff;">Daftar disini</a></p>
+            </div>
+            <script>
+              function login(event) {
+                event.preventDefault();
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                if (username === 'wakatobi' && password === 'user123') {
+                  window.location.href = 'dashbord.html';
+                } else {
+                  alert('Username atau password salah!');
+                }
+              }
+            </script>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+    
+    <!-- Footer -->
+    <footer>
+      <div class="copyright"> Copyright by: <a target="_blank" href="https://www.instagram.com/rezzaarieff?igsh=MWswbWdwdnhoNXhleQ==">Reza Arif,</a> 
+        <a target="_blank" href="https://www.instagram.com/dayattjg?igsh=Zzc2enM3dHl1ZXl0">Hidayat Tanjung,</a> 
+        <a target="_blank" href="https://www.instagram.com/delisaaa_s?igsh=cWlrMG40c3RnczZ2">Deli Sartika,</a> 
+        <a target="_blank" href="https://www.instagram.com/_mhmdramaaaa?igsh=MXZ2dDJiNGY1bXpxNQ==">Muhammad Ramadan</a> 
+      </div>
+      <ul class="social-list">
+        <li><a href="https://www.tiktok.com/@warnaiwakatobi" target="_blank"><img src="images/tik-tok.png" alt="" width="28px"></a></li>
+        <li><a href="https://www.facebook.com/visitwakatobi/" target="_blank"><img src="images/Facebook-Logo.png" alt="" width="28px"></a></li>
+        <li><a href="https://www.instagram.com/visitwakatobi?igsh=MWpoaWloZWYyZGRyYg==" target="_blank"><img src="images/instagram.png" alt="" width="28px"></a></li>
+      </ul>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
